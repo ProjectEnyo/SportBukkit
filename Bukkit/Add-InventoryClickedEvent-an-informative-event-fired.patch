@@ -1,4 +1,4 @@
-From 83c6ba94f7d33da36c19240e51a28cccfc69c2c2 Mon Sep 17 00:00:00 2001
+From 4397624c81efc2ca75c27ae9a64d23199735115c Mon Sep 17 00:00:00 2001
 From: mrapple <tony@oc.tc>
 Date: Mon, 12 Nov 2012 20:31:30 -0600
 Subject: [PATCH] Add InventoryClickedEvent, an informative event fired after
@@ -7,7 +7,7 @@ Subject: [PATCH] Add InventoryClickedEvent, an informative event fired after
 
 diff --git a/src/main/java/org/bukkit/event/inventory/InventoryClickedEvent.java b/src/main/java/org/bukkit/event/inventory/InventoryClickedEvent.java
 new file mode 100644
-index 0000000..7d27a6e
+index 00000000..7d27a6ee
 --- /dev/null
 +++ b/src/main/java/org/bukkit/event/inventory/InventoryClickedEvent.java
 @@ -0,0 +1,110 @@

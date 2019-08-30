@@ -1,11 +1,11 @@
-From c00fcf065c3bb68f42bb53439df5c9435de9de04 Mon Sep 17 00:00:00 2001
+From 7a7f5d1e36a28f54306578a477af230f110f3fa0 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Tue, 22 Mar 2016 20:59:02 -0400
 Subject: [PATCH] Fix custom scoreboard not being used for various things
 
 
 diff --git a/src/main/java/net/minecraft/server/EntityPlayer.java b/src/main/java/net/minecraft/server/EntityPlayer.java
-index 9a7f684..a529d2e 100644
+index 9a7f684e..a529d2ea 100644
 --- a/src/main/java/net/minecraft/server/EntityPlayer.java
 +++ b/src/main/java/net/minecraft/server/EntityPlayer.java
 @@ -1689,4 +1689,11 @@ public class EntityPlayer extends EntityHuman implements ICrafting {

@@ -1,11 +1,11 @@
-From a433371f2839737b52601b4850689191601e58f6 Mon Sep 17 00:00:00 2001
+From 0a4603914854b4f6d4d1fd6e3888a53a459a9620 Mon Sep 17 00:00:00 2001
 From: Michael Himing <mhiming@gmail.com>
 Date: Sun, 8 Jan 2017 18:50:35 +1100
 Subject: [PATCH] Fix block break desync
 
 
 diff --git a/src/main/java/net/minecraft/server/PlayerConnection.java b/src/main/java/net/minecraft/server/PlayerConnection.java
-index 907ec93..4c33e48 100644
+index 907ec938..4c33e482 100644
 --- a/src/main/java/net/minecraft/server/PlayerConnection.java
 +++ b/src/main/java/net/minecraft/server/PlayerConnection.java
 @@ -956,6 +956,8 @@ public class PlayerConnection implements PacketListenerPlayIn, ITickable {

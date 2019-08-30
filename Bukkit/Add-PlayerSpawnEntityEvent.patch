@@ -1,4 +1,4 @@
-From 577120a5070c20a4fc6f6544ce17b5a64ef98ad7 Mon Sep 17 00:00:00 2001
+From 46bbdbe42f21fdb36e5766a8d5cfe090838c916e Mon Sep 17 00:00:00 2001
 From: YukonAppleGeek <yukonvinecki@gmail.com>
 Date: Sun, 26 May 2013 18:47:29 -0700
 Subject: [PATCH] Add PlayerSpawnEntityEvent
@@ -6,7 +6,7 @@ Subject: [PATCH] Add PlayerSpawnEntityEvent
 
 diff --git a/src/main/java/org/bukkit/event/player/PlayerSpawnEntityEvent.java b/src/main/java/org/bukkit/event/player/PlayerSpawnEntityEvent.java
 new file mode 100644
-index 0000000..1fdc6ca
+index 00000000..1fdc6cad
 --- /dev/null
 +++ b/src/main/java/org/bukkit/event/player/PlayerSpawnEntityEvent.java
 @@ -0,0 +1,78 @@

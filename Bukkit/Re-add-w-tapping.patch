@@ -1,11 +1,11 @@
-From 1fd04a9588eabe8c8b6cf93120f128ca989c5aa2 Mon Sep 17 00:00:00 2001
+From 29bcdf21af3c658aec86c2bdf2bf8ff78031bd85 Mon Sep 17 00:00:00 2001
 From: ShinyDialga <shinydialga45@gmail.com>
 Date: Sat, 11 Aug 2018 23:50:00 -0500
 Subject: [PATCH] Re-add w-tapping
 
 
 diff --git a/src/main/java/org/bukkit/event/player/PlayerKnockbackEvent.java b/src/main/java/org/bukkit/event/player/PlayerKnockbackEvent.java
-index 7411633..138cbc5 100644
+index 74116330..138cbc55 100644
 --- a/src/main/java/org/bukkit/event/player/PlayerKnockbackEvent.java
 +++ b/src/main/java/org/bukkit/event/player/PlayerKnockbackEvent.java
 @@ -11,8 +11,8 @@ public class PlayerKnockbackEvent extends PlayerVelocityEvent {
@@ -20,7 +20,7 @@ index 7411633..138cbc5 100644
      }
  
 diff --git a/src/main/java/org/bukkit/event/player/PlayerVelocityEvent.java b/src/main/java/org/bukkit/event/player/PlayerVelocityEvent.java
-index 4afa837..efe1f63 100644
+index 4afa8377..efe1f63b 100644
 --- a/src/main/java/org/bukkit/event/player/PlayerVelocityEvent.java
 +++ b/src/main/java/org/bukkit/event/player/PlayerVelocityEvent.java
 @@ -12,12 +12,10 @@ public class PlayerVelocityEvent extends PlayerEvent implements Cancellable {

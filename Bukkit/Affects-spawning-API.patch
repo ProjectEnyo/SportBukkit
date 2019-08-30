@@ -1,11 +1,11 @@
-From dce6cf376629e4f6eed4e6018ce3d57739479af4 Mon Sep 17 00:00:00 2001
+From 364d0740c1847e3e0e3da278d23f53f6340174b1 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Thu, 2 Aug 2012 17:12:10 -0700
 Subject: [PATCH] Affects spawning API
 
 
 diff --git a/src/main/java/org/bukkit/entity/HumanEntity.java b/src/main/java/org/bukkit/entity/HumanEntity.java
-index e6dbe96..b49053f 100644
+index e6dbe96c..b49053f9 100644
 --- a/src/main/java/org/bukkit/entity/HumanEntity.java
 +++ b/src/main/java/org/bukkit/entity/HumanEntity.java
 @@ -325,4 +325,17 @@ public interface HumanEntity extends LivingEntity, AnimalTamer, Permissible, Inv

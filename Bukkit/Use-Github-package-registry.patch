@@ -1,0 +1,71 @@
+From a4985a62c5ba660cc6afa61c0e200dbfd6231983 Mon Sep 17 00:00:00 2001
+From: Ashcon Partovi <ashcon@partovi.net>
+Date: Fri, 30 Aug 2019 11:04:04 -0700
+Subject: [PATCH] Use Github package registry
+
+
+diff --git a/pom.xml b/pom.xml
+index 81c2b691..7d40e806 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -5,7 +5,7 @@
+ 
+     <groupId>tc.oc</groupId>
+     <artifactId>sportbukkit-api</artifactId>
+-    <version>1.12.2-R0.1-SNAPSHOT</version>
++    <version>1.12.2.1</version>
+     <packaging>jar</packaging>
+ 
+     <name>SportBukkit API</name>
+@@ -25,24 +25,16 @@
+ 
+     <repositories>
+         <repository>
+-            <id>pa-snapshots</id>
+-            <url>https://repo.extension.ws/content/repositories/snapshots</url>
+-        </repository>
+-        <repository>
+-            <id>pa-releases</id>
+-            <url>https://repo.extension.ws/content/repositories/releases</url>
++            <id>github</id>
++            <url>https://maven.pkg.github.com/Electroid</url>
+         </repository>
+     </repositories>
+ 
+     <distributionManagement>
+         <repository>
+-            <id>pa-deployment</id>
+-            <url>https://repo.extension.ws/content/repositories/releases</url>
++            <id>github</id>
++            <url>https://maven.pkg.github.com/Electroid/SportBukkit</url>
+         </repository>
+-        <snapshotRepository>
+-            <id>pa-deployment</id>
+-            <url>https://repo.extension.ws/content/repositories/snapshots</url>
+-        </snapshotRepository>
+     </distributionManagement>
+ 
+     <pluginRepositories>
+@@ -93,8 +85,8 @@
+         </dependency>
+         <dependency>
+             <groupId>tc.oc</groupId>
+-            <artifactId>minecraft-api</artifactId>
+-            <version>1.11-SNAPSHOT</version>
++            <artifactId>minecraft</artifactId>
++            <version>1.0.1</version>
+         </dependency>
+ 
+         <!-- testing -->
+@@ -112,9 +104,8 @@
+         </dependency>
+         <dependency>
+             <groupId>tc.oc</groupId>
+-            <artifactId>test-util</artifactId>
+-            <version>1.0-SNAPSHOT</version>
+-            <scope>test</scope>
++            <artifactId>util</artifactId>
++            <version>1.0.1</version>
+         </dependency>
+     </dependencies>
+ 

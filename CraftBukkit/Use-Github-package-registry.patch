@@ -1,0 +1,60 @@
+From d394f2e30b5ef52ac0ae6922a33ece2a283185d3 Mon Sep 17 00:00:00 2001
+From: Ashcon Partovi <ashcon@partovi.net>
+Date: Fri, 30 Aug 2019 11:04:40 -0700
+Subject: [PATCH] Use Github package registry
+
+
+diff --git a/pom.xml b/pom.xml
+index 05c9ae8b..b40a843a 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -5,7 +5,7 @@
+     <artifactId>sportbukkit</artifactId>
+     <packaging>jar</packaging>
+ 
+-    <version>1.12.2-R0.1-SNAPSHOT</version>
++    <version>1.12.2.1</version>
+     <name>SportBukkit</name>
+     <url>http://oc.tc</url>
+ 
+@@ -23,24 +23,16 @@
+ 
+     <repositories>
+         <repository>
+-            <id>pa-snapshots</id>
+-            <url>https://repo.extension.ws/content/repositories/snapshots</url>
+-        </repository>
+-        <repository>
+-            <id>pa-releases</id>
+-            <url>https://repo.extension.ws/content/repositories/releases</url>
++            <id>github</id>
++            <url>https://maven.pkg.github.com/Electroid</url>
+         </repository>
+     </repositories>
+ 
+     <distributionManagement>
+         <repository>
+-            <id>pa-deployment</id>
+-            <url>https://repo.extension.ws/content/repositories/releases</url>
++            <id>github</id>
++            <url>https://maven.pkg.github.com/Electroid/SportBukkit</url>
+         </repository>
+-        <snapshotRepository>
+-            <id>pa-deployment</id>
+-            <url>https://repo.extension.ws/content/repositories/snapshots</url>
+-        </snapshotRepository>
+     </distributionManagement>
+ 
+     <dependencies>
+@@ -112,9 +104,8 @@
+         </dependency>
+         <dependency>
+             <groupId>tc.oc</groupId>
+-            <artifactId>test-util</artifactId>
+-            <version>1.0-SNAPSHOT</version>
+-            <scope>test</scope>
++            <artifactId>util</artifactId>
++            <version>1.0.1</version>
+         </dependency>
+     </dependencies>
+ 

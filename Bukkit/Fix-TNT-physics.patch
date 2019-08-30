@@ -1,40 +1,40 @@
-From 3a12e96c25814a12b61f6b546bf2976040966df4 Mon Sep 17 00:00:00 2001
+From a63a8e82d8c2a92066dd2e8a89cfa23d15ec6cb4 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Tue, 17 Feb 2015 08:28:02 -0500
 Subject: [PATCH] Fix TNT physics
 
 
 diff --git a/src/main/java/org/bukkit/Bukkit.java b/src/main/java/org/bukkit/Bukkit.java
-index ee3cb96..89a7004 100644
+index ee3cb967..89a70049 100644
 --- a/src/main/java/org/bukkit/Bukkit.java
 +++ b/src/main/java/org/bukkit/Bukkit.java
-@@ -321,6 +321,13 @@ public final class Bukkit {
+@@ -320,6 +320,13 @@ public final class Bukkit {
+         return server.getFetchSkulls();
      }
  
-     /**
++    /**
 +     * @see Server#getWaterPushesTNT()
 +     */
 +    public static boolean getWaterPushesTNT() {
 +        return server.getWaterPushesTNT();
 +    }
 +
-+    /**
+     /**
       * Gets default ticks per animal spawns value.
       * <p>
-      * <b>Example Usage:</b>
 diff --git a/src/main/java/org/bukkit/Server.java b/src/main/java/org/bukkit/Server.java
-index e712174..ad95987 100644
+index e7121742..ad959874 100644
 --- a/src/main/java/org/bukkit/Server.java
 +++ b/src/main/java/org/bukkit/Server.java
-@@ -261,6 +261,11 @@ public interface Server extends PluginMessageRecipient {
+@@ -260,6 +260,11 @@ public interface Server extends PluginMessageRecipient {
+      */
      public boolean getFetchSkulls();
  
-     /**
++    /**
 +     * Should flowing water move primed TNT entities?
 +     */
 +    public boolean getWaterPushesTNT();
 +
-+    /**
+     /**
       * Gets default ticks per animal spawns value.
       * <p>
-      * <b>Example Usage:</b>

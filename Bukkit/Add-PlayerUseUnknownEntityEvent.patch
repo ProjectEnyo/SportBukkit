@@ -1,4 +1,4 @@
-From 59b90c816dd099f4c996a3d62646593d7dc6021d Mon Sep 17 00:00:00 2001
+From e0884c44df57cf88b8bc8a24a7da7219fd6e066d Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sat, 2 Apr 2016 05:08:36 -0400
 Subject: [PATCH] Add PlayerUseUnknownEntityEvent
@@ -6,7 +6,7 @@ Subject: [PATCH] Add PlayerUseUnknownEntityEvent
 
 diff --git a/src/main/java/org/bukkit/event/player/PlayerUseUnknownEntityEvent.java b/src/main/java/org/bukkit/event/player/PlayerUseUnknownEntityEvent.java
 new file mode 100644
-index 0000000..26cda06
+index 00000000..26cda066
 --- /dev/null
 +++ b/src/main/java/org/bukkit/event/player/PlayerUseUnknownEntityEvent.java
 @@ -0,0 +1,35 @@

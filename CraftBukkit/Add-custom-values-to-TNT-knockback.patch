@@ -1,11 +1,11 @@
-From 5ea251443d91b776c6b3f119d2ed25032a30f0f8 Mon Sep 17 00:00:00 2001
+From 66a3e6b3fa8553aa17b6445697c3f06ca0627daa Mon Sep 17 00:00:00 2001
 From: ShinyDialga <shinydialga45@gmail.com>
 Date: Sat, 5 Jan 2019 20:00:18 -0600
 Subject: [PATCH] Add custom values to TNT knockback
 
 
 diff --git a/src/main/java/net/minecraft/server/EntityLiving.java b/src/main/java/net/minecraft/server/EntityLiving.java
-index b6f9ad3..473be09 100644
+index b6f9ad30..473be097 100644
 --- a/src/main/java/net/minecraft/server/EntityLiving.java
 +++ b/src/main/java/net/minecraft/server/EntityLiving.java
 @@ -1168,10 +1168,10 @@ public abstract class EntityLiving extends Entity {
@@ -32,7 +32,7 @@ index b6f9ad3..473be09 100644
              }
          }
 diff --git a/src/main/java/net/minecraft/server/Explosion.java b/src/main/java/net/minecraft/server/Explosion.java
-index a0eabda..d756f5f 100644
+index a0eabda9..d756f5f3 100644
 --- a/src/main/java/net/minecraft/server/Explosion.java
 +++ b/src/main/java/net/minecraft/server/Explosion.java
 @@ -114,8 +114,10 @@ public class Explosion {
@@ -79,7 +79,7 @@ index a0eabda..d756f5f 100644
  
                              if (!entityhuman.isSpectator() && (!entityhuman.z() || !entityhuman.abilities.isFlying)) {
 diff --git a/src/main/java/net/minecraft/server/WorldServer.java b/src/main/java/net/minecraft/server/WorldServer.java
-index 0aeb9ab..649f89e 100644
+index 0aeb9ab9..649f89ee 100644
 --- a/src/main/java/net/minecraft/server/WorldServer.java
 +++ b/src/main/java/net/minecraft/server/WorldServer.java
 @@ -1228,8 +1228,8 @@ public class WorldServer extends World implements IAsyncTaskHandler {

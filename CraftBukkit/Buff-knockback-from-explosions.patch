@@ -1,11 +1,11 @@
-From 09d3e1f859e1d0e1ccb80f8f23b662971bb36813 Mon Sep 17 00:00:00 2001
+From 8170427dff0cdf0b25f591dd5c6023d46c6fe716 Mon Sep 17 00:00:00 2001
 From: ShinyDialga <shinydialga45@gmail.com>
 Date: Sun, 4 Nov 2018 16:52:40 -0600
 Subject: [PATCH] Buff knockback from explosions
 
 
 diff --git a/src/main/java/net/minecraft/server/EntityLiving.java b/src/main/java/net/minecraft/server/EntityLiving.java
-index 756378d..b6f9ad3 100644
+index 756378d5..b6f9ad30 100644
 --- a/src/main/java/net/minecraft/server/EntityLiving.java
 +++ b/src/main/java/net/minecraft/server/EntityLiving.java
 @@ -956,7 +956,8 @@ public abstract class EntityLiving extends Entity {

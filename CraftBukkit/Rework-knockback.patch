@@ -1,11 +1,11 @@
-From 5123063391f0ab27e0b2e2d05cfd517fe51d9b50 Mon Sep 17 00:00:00 2001
+From f3390a7e5536c930e8f407757eabb81076e4c3bc Mon Sep 17 00:00:00 2001
 From: ShinyDialga <shinydialga45@gmail.com>
 Date: Wed, 25 Jul 2018 03:06:42 -0500
 Subject: [PATCH] Rework knockback
 
 
 diff --git a/src/main/java/net/minecraft/server/EntityLiving.java b/src/main/java/net/minecraft/server/EntityLiving.java
-index ce1583f..7493223 100644
+index ce1583f7..74932235 100644
 --- a/src/main/java/net/minecraft/server/EntityLiving.java
 +++ b/src/main/java/net/minecraft/server/EntityLiving.java
 @@ -1161,16 +1161,32 @@ public abstract class EntityLiving extends Entity {

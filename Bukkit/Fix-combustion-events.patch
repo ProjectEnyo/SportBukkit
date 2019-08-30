@@ -1,4 +1,4 @@
-From c489b3670d52115cdf22d07e7d2af6685cc9a0bc Mon Sep 17 00:00:00 2001
+From 9644cc1804164df13fbf15e4603baee318b50c3c Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Thu, 30 Oct 2014 00:40:30 -0400
 Subject: [PATCH] Fix combustion events
@@ -6,7 +6,7 @@ Subject: [PATCH] Fix combustion events
 
 diff --git a/src/main/java/org/bukkit/event/entity/EntityExtinguishEvent.java b/src/main/java/org/bukkit/event/entity/EntityExtinguishEvent.java
 new file mode 100644
-index 0000000..5833ab7
+index 00000000..5833ab7c
 --- /dev/null
 +++ b/src/main/java/org/bukkit/event/entity/EntityExtinguishEvent.java
 @@ -0,0 +1,25 @@
